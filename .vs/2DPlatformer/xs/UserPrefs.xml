@@ -1,15 +1,18 @@
 ﻿<Properties StartupConfiguration="{4B96806D-EA4F-29C8-FFFC-08AB6B85CCB6}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Movement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/_Script/CoinSpawn.cs">
     <Files>
-      <File FileName="Assets/PhysicsMovement.cs" Line="103" Column="2" />
-      <File FileName="Assets/Movement.cs" Line="21" Column="42" />
+      <File FileName="Assets/_Script/Movement.cs" Line="41" Column="10" />
+      <File FileName="Assets/_Script/Coin.cs" Line="28" Column="6" />
+      <File FileName="Assets/_Script/CoinSpawn.cs" Line="5" Column="21" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="2DPlatformer" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Movement.cs" selected="True" />
+              <Node name="_Script" expanded="True">
+                <Node name="CoinSpawn.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
@@ -18,7 +21,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9c039a1b-f20a-4ef5-a940-ae538b4a25da" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="782b2b33-5dee-487e-9710-d7a012c4a717" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
