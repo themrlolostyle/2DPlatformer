@@ -1,14 +1,15 @@
 ﻿<Properties StartupConfiguration="{4B96806D-EA4F-29C8-FFFC-08AB6B85CCB6}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/PhysicsMovement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Movement.cs">
     <Files>
       <File FileName="Assets/PhysicsMovement.cs" Line="103" Column="2" />
+      <File FileName="Assets/Movement.cs" Line="21" Column="42" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="2DPlatformer" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="PhysicsMovement.cs" selected="True" />
+              <Node name="Movement.cs" selected="True" />
             </Node>
           </Node>
         </State>
