@@ -63,10 +63,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\_Script\Coin.cs" />
-    <Compile Include="Assets\_Script\CoinSpawn.cs" />
-    <Compile Include="Assets\_Script\EnemyPatrol.cs" />
-    <Compile Include="Assets\_Script\Movement.cs" />
+    <Compile Include="Assets\Script\Coin.cs" />
+    <Compile Include="Assets\Script\CoinSpawn.cs" />
+    <Compile Include="Assets\Script\EnemyPatrol.cs" />
+    <Compile Include="Assets\Script\Movement.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/vasaevch/Desktop/Testing_Unity_Project/SakutinKurs/Unity Базовый/2DPlatformer/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
