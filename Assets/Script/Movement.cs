@@ -25,15 +25,11 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.D))
         {
-            _animator.SetBool("Run", true);
-            _spriteRenderer.flipX = false;
-            transform.Translate(_speed * Time.deltaTime, 0, 0);
+            Move(false);
         }
         else if (Input.GetKey(KeyCode.A))
         {
-            _animator.SetBool("Run", true);
-            _spriteRenderer.flipX = true;
-            transform.Translate(_speed * Time.deltaTime * -1, 0, 0);
+            Move(true);
         }
         else
         {
@@ -43,6 +39,21 @@ public class Movement : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space))
         {
             _rb2D.AddForce(Vector2.up * _jumpPower);
+        }
+    }
+
+    public void Move(bool leftDirection)
+    {
+        _animator.SetBool("Run", true);
+        _spriteRenderer.flipX = leftDirection;
+
+        if (leftDirection == true)
+        {
+            transform.Translate(_speed * Time.deltaTime * -1, 0, 0);
+        }
+        else
+        {
+            transform.Translate(_speed * Time.deltaTime, 0, 0);
         }
     }
 }

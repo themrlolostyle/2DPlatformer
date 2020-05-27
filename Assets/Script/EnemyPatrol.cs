@@ -5,18 +5,23 @@ using UnityEngine;
 public class EnemyPatrol : MonoBehaviour
 {
     [SerializeField] private Transform[] _points;
-    [SerializeField] private Transform _enemy;
+    [SerializeField] private Enemy _enemy;
     [SerializeField] private float _speed;
 
     private int currendPoint;
 
+    private void Start()
+    {
+        _enemy.Speed = _speed;
+        _enemy.Target = _points[0];
+    }
+
     private void Update()
     {
         Transform target = _points[currendPoint];
+        _enemy.Target = target;
 
-        _enemy.position = Vector3.MoveTowards(_enemy.transform.position, target.position, _speed * Time.deltaTime);
-
-        if (_enemy.position == target.position)
+        if (_enemy.transform.position == target.position)
         {
             currendPoint++;
             if (currendPoint >= _points.Length)
@@ -24,6 +29,5 @@ public class EnemyPatrol : MonoBehaviour
                 currendPoint = 0;
             }
         }
-        
     }
 }

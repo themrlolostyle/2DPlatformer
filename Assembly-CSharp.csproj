@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\Script\Coin.cs" />
     <Compile Include="Assets\Script\CoinSpawn.cs" />
+    <Compile Include="Assets\Script\Enemy.cs" />
     <Compile Include="Assets\Script\EnemyPatrol.cs" />
     <Compile Include="Assets\Script\Movement.cs" />
     <Reference Include="Unity.Timeline.Editor">
