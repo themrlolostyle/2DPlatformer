@@ -4,11 +4,22 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public float Speed { set; private get; }
-    public Transform Target { set; private get; }
+    [SerializeField] private Transform[] _points;
+    [SerializeField] private float _speed;
+
+    private int _currentPoint;
 
     private void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, Target.position, Speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, _points[_currentPoint].position, _speed * Time.deltaTime);
+
+        if (transform.position == _points[_currentPoint].position)
+        {
+            _currentPoint++;
+            if (_currentPoint >= _points.Length)
+            {
+                _currentPoint = 0;
+            }
+        }
     }
 }
